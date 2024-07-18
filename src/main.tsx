@@ -2,7 +2,7 @@ import "./index.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./components/RootLayout";
 
@@ -17,7 +17,7 @@ import ServiceLoader from "./routes/service/loader";
 import Client from "./routes/client";
 import ClientLoader from "./routes/client/loader";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
